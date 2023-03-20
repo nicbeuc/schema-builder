@@ -82,4 +82,6 @@ export const INPUT_TYPES = {
   'video_url': {
     'name': 'Video URL',
   }
-}
+};
+
+export const COPYRIGHT_TEXT = '© 2023-present Nick Beuchat. All rights reserved.';

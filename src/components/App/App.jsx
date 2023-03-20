@@ -1,9 +1,14 @@
+import React from 'react'
+import Header from '../Header'
+
 function App() {
-  return (
-    <div className="App">
-      <h1>Schema Builder</h1>
-    </div>
-  )
+  return (<>
+    <Header />
+    <main></main>
+    <footer>
+      <small></small>
+    </footer>
+  </>)
 }
 
 export default App
