@@ -1,11 +1,10 @@
+import styles from './Footer.module.css'
 import { COPYRIGHT_TEXT } from "../../constants"
 
 function Footer() {
   return (
-    <footer>
-      <div className="wrapper">
-        <small>{ COPYRIGHT_TEXT }</small>
-      </div>
+    <footer className={styles.footer}>
+      <small>{ COPYRIGHT_TEXT }</small>
     </footer>
   )
 }
