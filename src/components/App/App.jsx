@@ -1,9 +1,10 @@
-import React from 'react'
-import Header from '../Header'
-import Footer from '../Footer'
-import Main from '../Main'
+import React from "react"
+import Header from "../Header"
+import Footer from "../Footer"
+import Main from "../Main"
+import TextInput from "../TextInput"
 
-import styles from './App.module.css'
+import styles from "./App.module.css"
 
 function App() {
   return (
@@ -12,14 +13,8 @@ function App() {
       <Main>
         <div className='screens'>
           <section className='screen'>
-            <div className='screen__heading'>
-              <h2>Metadata</h2>
-            </div>
             <div className='inputs'>
-              <input type='text' />
-            </div>
-            <div className='controls'>
-              <button>Next</button>
+              <TextInput label='Name' />
             </div>
           </section>
         </div>
