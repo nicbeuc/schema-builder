@@ -131,6 +131,8 @@
 /* Root */
 
 :root {
+  --debug: 0;
+
   --spacing-50: .4rem;
   --spacing-100: .8rem;
   --spacing-200: 1.6rem;
@@ -184,6 +186,12 @@ body {
 }
 
 /* General Styles */
+
+*,
+*:before,
+*:after {
+  outline: calc(var(--debug) * 1px) dotted red;
+}
 
 small {
   font-size: 1.2rem;
