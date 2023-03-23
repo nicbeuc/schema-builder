@@ -2,8 +2,10 @@ import styles from './Header.module.css'
 
 function Header() {
   return (
-    <header className={styles.header}>
-      <h1>Schema Builder</h1>
+    <header>
+      <div className={styles.inner}>
+        <h1 className={styles.title}>schema builder</h1>
+      </div>
     </header>
   )
 }

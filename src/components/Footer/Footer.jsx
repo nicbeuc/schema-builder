@@ -3,8 +3,10 @@ import { COPYRIGHT_TEXT } from "../../constants"
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
-      <small>{ COPYRIGHT_TEXT }</small>
+    <footer>
+      <div className={styles.inner}>
+        <small>{ COPYRIGHT_TEXT }</small>
+      </div>
     </footer>
   )
 }
