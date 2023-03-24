@@ -7,7 +7,6 @@
 .label {
   font-size: 1.4rem;
   letter-spacing: 0.02ch;
-  color: var(--color-neutral-800);
 }
 
 .input {
@@ -28,15 +27,15 @@
 
 .wrapper:has(input:required) .label::after {
   content: ' *';
-  color: var(--color-primary-700);
-  font-family: "Satoshi-Bold";
+  color: var(--color-primary-500);
+  font-family: var(--font-family-bold);
 }
 
 /* Focus state */
 
 .input:not(:disabled):is(:focus, :focus-visible) {
-  --color-shadow-1: var(--color-primary-500);
-  --color-shadow-2: var(--color-primary-300);
+  --color-shadow-1: var(--color-primary-400);
+  --color-shadow-2: var(--color-primary-200);
   border-color: var(--color-primary-500);
 }
 

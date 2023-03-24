@@ -223,11 +223,15 @@ p {
   --font-size-h1: calc(var(--font-size-h2) * var(--font-size-scale));
   --font-size-h0: calc(var(--font-size-h1) * var(--font-size-scale));
 
-  --color-primary-100: #EFFCF0;
-  --color-primary-300: #CCEFD3;
-  --color-primary-500: #99CBAE;
-  --color-primary-700: #4D9277;
-  --color-primary-900: #1D6155;
+  --color-primary-100: #E1F9E6;
+  --color-primary-200: #C5F4D4;
+  --color-primary-300: #9FDEB9;
+  --color-primary-400: #7ABD9C;
+  --color-primary-500: #4D9277;
+  --color-primary-600: #387D69;
+  --color-primary-700: #26695C;
+  --color-primary-800: #18544F;
+  --color-primary-900: #0E4546;
 
   --color-neutral-50: #fafafa;
   --color-neutral-100: #f5f5f5;

@@ -2,6 +2,7 @@ import Header from "../Header"
 import Footer from "../Footer"
 import Main from "../Main"
 import TextInput from "../TextInput"
+import LinkButton from "../LinkButton"
 
 import styles from "./App.module.css"
 
@@ -16,7 +17,7 @@ function App() {
               <TextInput label='Name' required />
               <TextInput label='Email' type='email' disabled />
               <TextInput label='Name' required />
-              <button>This is a button</button>
+              <LinkButton>Test button</LinkButton>
             </div>
           </section>
         </div>
