@@ -4,13 +4,19 @@
   gap: var(--spacing-50);
 }
 
+.label {
+  font-size: 1.4rem;
+  letter-spacing: 0.02ch;
+  color: var(--color-neutral-800);
+}
+
 .input {
   --color-shadow-1: transparent;
   --color-shadow-2: transparent;
   --color-background: var(--color-neutral-50);
   --color-border: var(--color-neutral-400);
   border: 1px solid var(--color-border);
-  border-radius: var(--spacing-100);
+  border-radius: var(--spacing-50);
   background-color: var(--color-background);
   padding: var(--spacing-50) var(--spacing-100);
   box-shadow:
@@ -18,12 +24,35 @@
   transition: background-color var(--duration-short) ease;
 }
 
-.input:is(:focus, :focus-visible) {
+/* Required */
+
+.wrapper:has(input:required) .label::after {
+  content: ' *';
+  color: var(--color-primary-700);
+  font-family: "Satoshi-Bold";
+}
+
+/* Focus state */
+
+.input:not(:disabled):is(:focus, :focus-visible) {
   --color-shadow-1: var(--color-primary-500);
   --color-shadow-2: var(--color-primary-300);
   border-color: var(--color-primary-500);
 }
 
-.input:not(:focus, :focus-visible):hover {
+/* Hover state */
+
+.input:not(:focus, :focus-visible, :disabled):hover {
   --color-background: var(--color-neutral-100);
+}
+
+/* Disabled state */
+
+.wrapper:has(.input:disabled) .label {
+  color: var(--color-neutral-600)
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  --color-border: var(--color-neutral-300);
 }

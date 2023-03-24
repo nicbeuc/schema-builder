@@ -10,7 +10,13 @@ function TextInput({ id, label, ...rest }) {
       <label className={styles.label} htmlFor={inputId}>
         {label}
       </label>
-      <input className={styles.input} id={inputId} {...rest} />
+      <input
+        className={styles.input}
+        id={inputId}
+        type='text'
+        autoComplete='off'
+        {...rest}
+      />
     </div>
   )
 }

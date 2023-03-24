@@ -14,7 +14,10 @@ function App() {
         <div className='screens'>
           <section className='screen'>
             <div className='inputs'>
-              <TextInput label='Name' />
+              <TextInput label='Name' required />
+              <TextInput label='Email' type='email' disabled />
+              <TextInput label='Name' required />
+              <button>This is a button</button>
             </div>
           </section>
         </div>
