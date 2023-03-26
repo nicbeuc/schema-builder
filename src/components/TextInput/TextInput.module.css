@@ -4,9 +4,23 @@
   gap: var(--spacing-50);
 }
 
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .label {
+  cursor: pointer;
   font-size: 1.4rem;
   letter-spacing: 0.02ch;
+  font-family: var(--font-family-medium);
+}
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: var(--color-neutral-500);
 }
 
 .input {
@@ -48,7 +62,8 @@
 /* Disabled state */
 
 .wrapper:has(.input:disabled) .label {
-  color: var(--color-neutral-600)
+  color: var(--color-neutral-600);
+  cursor: not-allowed;
 }
 
 .input:disabled {

@@ -14,7 +14,7 @@ function App() {
         <div className='screens'>
           <section className='screen'>
             <div className='inputs'>
-              <TextInput label='Name' required />
+              <TextInput label='Name' infoLink='https://google.com' required />
               <TextInput label='Email' type='email' disabled />
               <TextInput label='Name' required />
               <LinkButton>Test button</LinkButton>
