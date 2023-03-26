@@ -281,3 +281,16 @@ small {
   letter-spacing: 0.05ch;
   color: var(--color-neutral-700);
 }
+
+/* General focus states */
+
+button:focus,
+a:focus {
+  outline: .2rem solid var(--color-primary-400);
+  outline-offset: .2rem;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}

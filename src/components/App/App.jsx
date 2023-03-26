@@ -3,24 +3,23 @@ import Footer from "../Footer"
 import Main from "../Main"
 import TextInput from "../TextInput"
 import LinkButton from "../LinkButton"
+import InputWrapper from "../InputWrapper"
+import { SCHEMA_ATTRIBUTES } from "../../constants"
 
 import styles from "./App.module.css"
+
+const { name, tag } = SCHEMA_ATTRIBUTES
 
 function App() {
   return (
     <div className={styles.app}>
       <Header />
       <Main>
-        <div className='screens'>
-          <section className='screen'>
-            <div className='inputs'>
-              <TextInput label='Name' infoLink='https://google.com' required />
-              <TextInput label='Email' type='email' disabled />
-              <TextInput label='Name' required />
-              <LinkButton>Test button</LinkButton>
-            </div>
-          </section>
-        </div>
+        <InputWrapper>
+          <TextInput label={name.label} infoLink={name.docLink} required />
+          <TextInput label={tag.label} infoLink={tag.docLink} />
+        </InputWrapper>
+        <LinkButton>Test button</LinkButton>
       </Main>
       <Footer />
     </div>

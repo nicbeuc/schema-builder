@@ -2,9 +2,8 @@ import React from "react"
 import Icon from "../Icon"
 import styles from "./TextInput.module.css"
 
-function TextInput({ id, label, infoLink, ...rest }) {
-  const generatedId = React.useId()
-  const inputId = id || generatedId
+function TextInput({ label, infoLink, ...rest }) {
+  const inputId = React.useId()
 
   return (
     <div className={styles.wrapper}>

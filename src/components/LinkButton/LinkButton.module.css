@@ -15,15 +15,6 @@
   background-color: var(--color-primary-600);
 }
 
-.button:focus {
-  outline: .2rem solid var(--color-primary-400);
-  outline-offset: .2rem;
-}
-
-.button:focus:not(:focus-visible) {
-  outline: none;
-}
-
 .button:active {
   transform: translateY(.2rem);
 }
