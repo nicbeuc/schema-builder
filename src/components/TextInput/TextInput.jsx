@@ -1,5 +1,5 @@
 import React from "react"
-import Icon from "../Icon"
+import { Info } from "react-feather"
 import styles from "./TextInput.module.css"
 
 function TextInput({ label, infoLink, ...rest }) {
@@ -19,7 +19,7 @@ function TextInput({ label, infoLink, ...rest }) {
             rel='noreferrer'
             className={styles.icon}
           >
-            <Icon icon='info' />
+            <Info size={16} />
           </a>
         )}
       </div>
