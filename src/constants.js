@@ -10,9 +10,19 @@ export const SCHEMA_ATTRIBUTES = {
       "https://shopify.dev/docs/themes/architecture/sections/section-schema#name",
   },
   tag: {
-    label: "HTML Tag",
+    label: "HTML tag",
     docLink:
       "https://shopify.dev/docs/themes/architecture/sections/section-schema#tag",
+  },
+  sectionClass: {
+    label: "CSS class",
+    docLink:
+      "https://shopify.dev/docs/themes/architecture/sections/section-schema#class",
+  },
+  limit: {
+    label: "Section limit",
+    docLink:
+      "https://shopify.dev/docs/themes/architecture/sections/section-schema#limit",
   },
 }
 

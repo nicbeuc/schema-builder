@@ -1,13 +1,12 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-50);
 }
 
 .upper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .label {
@@ -15,13 +14,16 @@
   font-size: 1.4rem;
   letter-spacing: 0.02ch;
   font-family: var(--font-family-medium);
+  padding-bottom: var(--spacing-50);
 }
 
 .icon {
   width: 1.6rem;
   height: 1.6rem;
   color: var(--color-neutral-500);
+  border-radius: 100vw;
   transition: color var(--duration-short) ease;
+  margin-bottom: var(--spacing-50);
 }
 
 .icon:hover {
