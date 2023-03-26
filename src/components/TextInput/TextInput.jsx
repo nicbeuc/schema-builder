@@ -24,16 +24,12 @@ function TextInput({ label, infoLink, ...rest }) {
         )}
       </div>
       <input
-        className={styles.input}
-        id={inputId}
+        type='text'
         autoComplete='off'
         aria-autocomplete='none'
-        onFocus={(e) => {
-          e.target.setAttribute("autocomplete", "off")
-          e.target.setAttribute("aria-autocomplete", "none")
-        }}
         {...rest}
-        type='text'
+        className={styles.input}
+        id={inputId}
       />
     </div>
   )

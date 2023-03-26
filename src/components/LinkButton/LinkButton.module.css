@@ -8,7 +8,7 @@
   min-height: 4rem;
   padding-inline: var(--spacing-200);
   letter-spacing: 0.02ch;
-  transition: background-color var(--duration-short) var(--easing-1), transform var(--duration-short) var(--easing-1);
+  transition: background-color var(--duration-mid) var(--easing-1), transform var(--duration-short) var(--easing-1);
 }
 
 .button:hover {
