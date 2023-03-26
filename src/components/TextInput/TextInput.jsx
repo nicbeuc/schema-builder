@@ -14,7 +14,7 @@ function TextInput({ label, infoLink, ...rest }) {
         {infoLink && (
           <a
             href={infoLink}
-            aria-label={`Get more info about the ${label} property`}
+            aria-label={`Read the official documentation on the "${label}" property`}
             target='_blank'
             rel='noreferrer'
             className={styles.icon}
@@ -26,9 +26,14 @@ function TextInput({ label, infoLink, ...rest }) {
       <input
         className={styles.input}
         id={inputId}
-        type='text'
         autoComplete='off'
+        aria-autocomplete='none'
+        onFocus={(e) => {
+          e.target.setAttribute("autocomplete", "off")
+          e.target.setAttribute("aria-autocomplete", "none")
+        }}
         {...rest}
+        type='text'
       />
     </div>
   )
