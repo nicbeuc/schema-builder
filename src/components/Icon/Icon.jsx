@@ -1,3 +1,5 @@
+// Icons from Iconoir https://iconoir.com/
+
 function getIcon(icon) {
   switch (icon) {
     case "info":

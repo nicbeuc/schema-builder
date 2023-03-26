@@ -21,6 +21,11 @@
   width: 1.6rem;
   height: 1.6rem;
   color: var(--color-neutral-500);
+  transition: color var(--duration-short) ease;
+}
+
+.icon:hover {
+  color: var(--color-primary-500);
 }
 
 .input {

@@ -17,8 +17,9 @@ function TextInput({ label, infoLink, ...rest }) {
             aria-label={`Get more info about the ${label} property`}
             target='_blank'
             rel='noreferrer'
+            className={styles.icon}
           >
-            <Icon icon='info' className={styles.icon} />
+            <Icon icon='info' />
           </a>
         )}
       </div>
