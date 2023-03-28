@@ -7,4 +7,6 @@
 
 .title {
   font-size: var(--font-size-h4);
+  font-family: var(--font-family-bold);
+  color: var(--color-neutral-500);
 }

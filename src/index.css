@@ -249,6 +249,28 @@ p {
   --color-neutral-900: #212121;
 
   --color-border-100: var(--color-neutral-300);
+
+  --shadow-color: 0deg 0% 74%;
+  --shadow-elevation-low:
+    0px 0.5px 0.7px hsl(var(--shadow-color) / 0.11),
+    0px 0.8px 1.1px -0.6px hsl(var(--shadow-color) / 0.18),
+    0px 1.6px 2.1px -1.2px hsl(var(--shadow-color) / 0.26);
+  --shadow-elevation-medium:
+    0px 0.5px 0.7px hsl(var(--shadow-color) / 0.09),
+    0px 1.4px 1.8px -0.3px hsl(var(--shadow-color) / 0.13),
+    0px 2.5px 3.3px -0.6px hsl(var(--shadow-color) / 0.17),
+    0px 4.5px 5.9px -0.9px hsl(var(--shadow-color) / 0.2),
+    0px 8.1px 10.6px -1.2px hsl(var(--shadow-color) / 0.24);
+  --shadow-elevation-high:
+    0px 0.5px 0.7px hsl(var(--shadow-color) / 0.1),
+    0px 2.5px 3.3px -0.2px hsl(var(--shadow-color) / 0.12),
+    0px 4.3px 5.6px -0.3px hsl(var(--shadow-color) / 0.14),
+    0px 6.3px 8.3px -0.5px hsl(var(--shadow-color) / 0.16),
+    0px 8.8px 11.6px -0.6px hsl(var(--shadow-color) / 0.18),
+    0px 12.3px 16.1px -0.8px hsl(var(--shadow-color) / 0.2),
+    0px 17px 22.3px -0.9px hsl(var(--shadow-color) / 0.22),
+    0px 23.4px 30.7px -1.1px hsl(var(--shadow-color) / 0.24),
+    -0.1px 31.9px 41.9px -1.2px hsl(var(--shadow-color) / 0.26);
 }
 
 html {

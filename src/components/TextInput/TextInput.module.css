@@ -21,7 +21,7 @@
 .icon {
   width: 1.6rem;
   height: 1.6rem;
-  color: var(--color-neutral-500);
+  color: var(--color-neutral-400);
   border-radius: 100vw;
   transition: color var(--duration-short) ease;
   margin-bottom: var(--spacing-50);
