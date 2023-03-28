@@ -264,7 +264,10 @@ body {
   font-family: var(--font-family-regular);
   font-size: 1.6rem;
   color: var(--color-neutral-900);
-  background-color: var(--color-neutral-100);
+  background-color: var(--color-neutral-50);
+  background-image: radial-gradient(var(--color-neutral-200) 1.5px, transparent 0);
+  background-size: 20px 20px;
+  background-position: 0 0;
 }
 
 #root {

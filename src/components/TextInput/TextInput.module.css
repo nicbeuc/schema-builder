@@ -47,6 +47,10 @@
   transition: background-color var(--duration-short) ease;
 }
 
+.input::placeholder {
+  color: var(--color-neutral-400);
+}
+
 /* Required */
 
 .wrapper:has(input:required) .label::after {
