@@ -1,0 +1,26 @@
+.wrapper {
+  --padding: var(--spacing-300);
+  --border: .1rem solid var(--color-border-100);
+  background-color: white;
+  border-radius: var(--spacing-100);
+  border: var(--border);
+  min-width: 32rem;
+}
+
+.headerWrapper {
+  padding: calc(var(--padding) / 1.5) var(--padding);
+  border-bottom: var(--border);
+}
+
+.header {
+  font-family: var(--font-family-medium);
+  font-size: var(--font-size-h4);
+}
+
+.mainWrapper {
+  padding: var(--padding);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  row-gap: var(--spacing-400);
+}

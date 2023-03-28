@@ -2,7 +2,7 @@ import React from "react"
 import { Info } from "react-feather"
 import styles from "./TextInput.module.css"
 
-function TextInput({ label, infoLink, ...rest }) {
+function TextInput({ label, placeholder, infoLink, ...rest }) {
   const inputId = React.useId()
 
   return (
@@ -19,7 +19,7 @@ function TextInput({ label, infoLink, ...rest }) {
             rel='noreferrer'
             className={styles.icon}
           >
-            <Info size={16} />
+            <Info size={16} strokeWidth={1.5} />
           </a>
         )}
       </div>
@@ -27,6 +27,7 @@ function TextInput({ label, infoLink, ...rest }) {
         type='text'
         autoComplete='off'
         aria-autocomplete='none'
+        placeholder={placeholder}
         {...rest}
         className={styles.input}
         id={inputId}

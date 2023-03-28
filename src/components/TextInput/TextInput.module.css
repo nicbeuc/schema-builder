@@ -14,7 +14,8 @@
   font-size: 1.4rem;
   letter-spacing: 0.02ch;
   font-family: var(--font-family-medium);
-  padding-bottom: var(--spacing-50);
+  padding-bottom: var(--spacing-100);
+  color: var(--color-neutral-700);
 }
 
 .icon {
@@ -33,12 +34,14 @@
 .input {
   --color-shadow-1: transparent;
   --color-shadow-2: transparent;
-  --color-background: var(--color-neutral-50);
-  --color-border: var(--color-neutral-400);
+  --color-background: var(--color-neutral-0);
+  --color-border: var(--color-border-100);
   border: 1px solid var(--color-border);
   border-radius: var(--spacing-50);
   background-color: var(--color-background);
-  padding: var(--spacing-50) var(--spacing-100);
+  padding: var(--spacing-100);
+  line-height: 1.25;
+  letter-spacing: .025ch;
   box-shadow:
     0 0 0 .1rem var(--color-shadow-1), 0 0 .8rem -.1rem var(--color-shadow-2);
   transition: background-color var(--duration-short) ease;
@@ -63,7 +66,7 @@
 /* Hover state */
 
 .input:not(:focus, :focus-visible, :disabled):hover {
-  --color-background: var(--color-neutral-100);
+  --color-background: var(--color-neutral-50);
 }
 
 /* Disabled state */
@@ -75,5 +78,5 @@
 
 .input:disabled {
   cursor: not-allowed;
-  --color-border: var(--color-neutral-300);
+  --color-border: var(--color-neutral-200);
 }
