@@ -1,4 +1,8 @@
 .main {
-  display: grid;
-  place-content: center;
+  /* display: grid;
+  place-content: center; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
 }
