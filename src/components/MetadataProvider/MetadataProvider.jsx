@@ -2,7 +2,7 @@ import React from "react"
 
 export const MetadataContext = React.createContext()
 
-function MetadataContextProvider({ children }) {
+function MetadataProvider({ children }) {
   const [name, setName] = React.useState("")
   const [tag, setTag] = React.useState("")
   const [sectionClass, setSectionClass] = React.useState("")
@@ -19,6 +19,8 @@ function MetadataContextProvider({ children }) {
     setLimit,
   }
 
+  console.log(value)
+
   return (
     <MetadataContext.Provider value={value}>
       {children}
@@ -26,4 +28,4 @@ function MetadataContextProvider({ children }) {
   )
 }
 
-export default MetadataContextProvider
+export default MetadataProvider
