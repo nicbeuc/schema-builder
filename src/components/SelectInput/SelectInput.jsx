@@ -1,7 +1,11 @@
 import React from "react"
 import * as Select from "@radix-ui/react-select"
 import * as Label from "@radix-ui/react-label"
-import { ChevronDown as ChevronIcon, Info as InfoIcon } from "react-feather"
+import {
+  ChevronDown as ChevronIcon,
+  Info as InfoIcon,
+  Check as CheckIcon,
+} from "react-feather"
 
 import styles from "./SelectInput.module.css"
 
@@ -49,13 +53,18 @@ function SelectInput({
         >
           <Select.Viewport className={styles.viewport}>
             {acceptedValues.map((acceptedValue) => (
-              <Select.Item
-                key={acceptedValue}
-                value={acceptedValue}
-                className={styles.item}
-              >
-                {acceptedValue}
-              </Select.Item>
+              <>
+                <Select.Item
+                  key={acceptedValue}
+                  value={acceptedValue}
+                  className={styles.item}
+                >
+                  <Select.ItemText>{acceptedValue}</Select.ItemText>
+                  <Select.ItemIndicator asChild>
+                    <CheckIcon size={16} strokeWidth={1.5} />
+                  </Select.ItemIndicator>
+                </Select.Item>
+              </>
             ))}
           </Select.Viewport>
         </Select.Content>

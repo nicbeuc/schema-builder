@@ -108,11 +108,15 @@
 }
 
 .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--spacing-50) var(--spacing-100);
   cursor: pointer;
   border-radius: .4rem;
 }
 
 .item[data-highlighted] {
-  background-color: var(--color-neutral-50);
+  background-color: var(--color-primary-500);
+  color: var(--color-neutral-0);
 }
