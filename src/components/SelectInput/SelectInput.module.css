@@ -1,0 +1,8 @@
+.trigger {
+  position: relative;
+}
+
+.portal {
+  position: absolute;
+  top: 0;
+}

@@ -2,6 +2,7 @@ import React from "react"
 import TextInput from "../TextInput"
 import LinkButton from "../LinkButton"
 import InputWrapper from "../InputWrapper"
+import SelectInput from "../SelectInput"
 import { MetadataContext } from "../MetadataProvider"
 
 import { SCHEMA_ATTRIBUTES } from "../../constants"
@@ -29,12 +30,13 @@ function MetadataControls() {
           placeholder='Section name'
           required
         />
-        <TextInput
+        <SelectInput
           label={SCHEMA_ATTRIBUTES.tag.label}
           infoLink={SCHEMA_ATTRIBUTES.tag.docLink}
+          acceptedValues={SCHEMA_ATTRIBUTES.tag.acceptedValues}
           value={tag}
-          onChange={(e) => setTag(e.target.value)}
-          placeholder='article'
+          onValueChange={setTag}
+          placeholder='Select an HTML tag'
         />
         <TextInput
           label={SCHEMA_ATTRIBUTES.sectionClass.label}

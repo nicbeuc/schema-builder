@@ -13,6 +13,7 @@ export const SCHEMA_ATTRIBUTES = {
     label: "HTML tag",
     docLink:
       "https://shopify.dev/docs/themes/architecture/sections/section-schema#tag",
+    acceptedValues: ["article", "aside", "div", "footer", "header", "section"],
   },
   sectionClass: {
     label: "CSS class",
