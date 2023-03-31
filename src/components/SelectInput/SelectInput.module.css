@@ -1,8 +1,118 @@
-.trigger {
+.wrapper {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
-.portal {
-  position: absolute;
-  top: 0;
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  letter-spacing: 0.02ch;
+  font-family: var(--font-family-medium);
+  padding-bottom: var(--spacing-100);
+  color: var(--color-neutral-700);
+}
+
+.infoIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: var(--color-neutral-400);
+  border-radius: 100vw;
+  transition: color var(--duration-short) ease;
+  margin-bottom: var(--spacing-50);
+}
+
+.infoIcon:hover {
+  color: var(--color-primary-500);
+}
+
+.trigger {
+  --color-shadow-1: transparent;
+  --color-shadow-2: transparent;
+  --color-background: var(--color-neutral-0);
+  --color-border: var(--color-border-100);
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  border-radius: var(--spacing-50);
+  background-color: var(--color-background);
+  padding: var(--spacing-100);
+  line-height: 1.25;
+  letter-spacing: .025ch;
+  box-shadow:
+    0 0 0 .1rem var(--color-shadow-1), 0 0 .8rem -.1rem var(--color-shadow-2);
+  transition: background-color var(--duration-short) ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Required */
+
+.wrapper:has(input:required) .label::after {
+  content: ' *';
+  color: var(--color-primary-500);
+  font-family: var(--font-family-bold);
+}
+
+/* Focus state */
+
+.trigger:not(:disabled):is(:focus, :focus-visible) {
+  --color-shadow-1: var(--color-primary-400);
+  --color-shadow-2: var(--color-primary-200);
+  border-color: var(--color-primary-500);
+}
+
+/* Hover state */
+
+.trigger:not(:focus, :focus-visible, :disabled):hover {
+  --color-background: var(--color-neutral-50);
+}
+
+/* Disabled state */
+
+.wrapper:has(.input:disabled) .label {
+  color: var(--color-neutral-600);
+  cursor: not-allowed;
+}
+
+.trigger:disabled {
+  cursor: not-allowed;
+  --color-border: var(--color-neutral-200);
+}
+
+.trigger[data-state="open"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.trigger[data-state="open"] .selectIcon {
+  transform: rotate(180deg);
+}
+
+.content {
+  background-color: var(--color-neutral-0);
+  width: var(--radix-popper-anchor-width);
+  border: 1px solid var(--color-border-100);
+  border-top: 0;
+  border-bottom-left-radius: var(--spacing-50);
+  border-bottom-right-radius: var(--spacing-50);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: var(--spacing-50);
+}
+
+.item {
+  padding: var(--spacing-50) var(--spacing-100);
+  cursor: pointer;
+  border-radius: .4rem;
+}
+
+.item[data-highlighted] {
+  background-color: var(--color-neutral-50);
 }

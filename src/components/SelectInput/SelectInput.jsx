@@ -27,7 +27,7 @@ function SelectInput({
             aria-label={`Read the official documentation on the "${label}" property`}
             target='_blank'
             rel='noreferrer'
-            className={styles.icon}
+            className={styles.infoIcon}
           >
             <InfoIcon size={16} strokeWidth={1.5} />
           </a>
@@ -38,14 +38,22 @@ function SelectInput({
           <Select.Value placeholder={placeholder} aria-label={value}>
             {value}
           </Select.Value>
-          <Select.Icon asChild>
+          <Select.Icon className={styles.selectIcon}>
             <ChevronIcon size={16} strokeWidth={1.5} />
           </Select.Icon>
         </Select.Trigger>
-        <Select.Content>
-          <Select.Viewport>
+        <Select.Content
+          className={styles.content}
+          alignOffset={0}
+          position='popper'
+        >
+          <Select.Viewport className={styles.viewport}>
             {acceptedValues.map((acceptedValue) => (
-              <Select.Item key={acceptedValue} value={acceptedValue}>
+              <Select.Item
+                key={acceptedValue}
+                value={acceptedValue}
+                className={styles.item}
+              >
                 {acceptedValue}
               </Select.Item>
             ))}
