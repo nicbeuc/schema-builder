@@ -28,7 +28,7 @@ function SelectInput({
         {infoLink && (
           <a
             href={infoLink}
-            aria-label={`Read the official documentation on the "${label}" property`}
+            aria-label={`Read the official Shopify documentation on the "${label}" property`}
             target='_blank'
             rel='noreferrer'
             className={styles.infoIcon}
