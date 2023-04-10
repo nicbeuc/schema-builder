@@ -16,6 +16,9 @@ function App() {
           <Step header='Metadata'>
             <MetadataControls />
           </Step>
+          <Step header='Settings'>
+            <h2>Settings</h2>
+          </Step>
         </Main>
       </MetadataProvider>
       <Footer />
