@@ -4,6 +4,7 @@ import Main from "../Main"
 import Step from "../Step"
 import MetadataControls from "../MetadataControls"
 import MetadataProvider from "../MetadataProvider"
+import Modal from "../Modal"
 
 import styles from "./App.module.css"
 
@@ -17,15 +18,9 @@ function App() {
             <MetadataControls />
           </Step>
           <Step header='Settings'>
-            {/*
-              <Modal
-                triggerComponent={<SomeComponent />}
-                title={title}
-                description
-              >
-                ...
-              </Modal
-            */}
+            <Modal title={"test title"} description={"test desc"}>
+              Content in here
+            </Modal>
           </Step>
         </Main>
       </MetadataProvider>
