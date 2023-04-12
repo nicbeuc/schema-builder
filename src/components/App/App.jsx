@@ -17,7 +17,15 @@ function App() {
             <MetadataControls />
           </Step>
           <Step header='Settings'>
-            <h2>Settings</h2>
+            {/*
+              <Modal
+                triggerComponent={<SomeComponent />}
+                title={title}
+                description
+              >
+                ...
+              </Modal
+            */}
           </Step>
         </Main>
       </MetadataProvider>
