@@ -2,6 +2,8 @@ import * as Dialog from "@radix-ui/react-dialog"
 import { X as CloseIcon } from "react-feather"
 import LinkButton from "../LinkButton"
 
+import styles from "./Modal.module.css"
+
 function Modal({ title, description, children, ...rest }) {
   return (
     <Dialog.Root>
@@ -10,7 +12,7 @@ function Modal({ title, description, children, ...rest }) {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay />
-        <Dialog.Content {...rest}>
+        <Dialog.Content className={styles.content} {...rest}>
           <Dialog.Title>{title}</Dialog.Title>
           <Dialog.Description>{description}</Dialog.Description>
           <div>{children}</div>
