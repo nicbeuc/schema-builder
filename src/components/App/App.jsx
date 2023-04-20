@@ -18,7 +18,7 @@ function App() {
             <MetadataControls />
           </Step>
           <Step header='Settings'>
-            <Modal title={"test title"} description={"test desc"}>
+            <Modal title={"Test title"} description={"Test desc"}>
               Content in here
             </Modal>
           </Step>

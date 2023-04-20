@@ -11,14 +11,16 @@ function Modal({ title, description, children, ...rest }) {
         <LinkButton>Open Modal</LinkButton>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay />
+        <Dialog.Overlay className={styles.overlay} />
         <Dialog.Content className={styles.content} {...rest}>
-          <Dialog.Title>{title}</Dialog.Title>
-          <Dialog.Description>{description}</Dialog.Description>
-          <div>{children}</div>
-          <Dialog.Close>
-            <CloseIcon />
-          </Dialog.Close>
+          <div className={styles.inner}>
+            <Dialog.Title>{title}</Dialog.Title>
+            <Dialog.Description>{description}</Dialog.Description>
+            <div>{children}</div>
+            <Dialog.Close className={styles.close}>
+              <CloseIcon size={16} className={styles.closeIcon} />
+            </Dialog.Close>
+          </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

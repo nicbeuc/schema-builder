@@ -1,6 +1,6 @@
 .wrapper {
   --padding: var(--spacing-300);
-  --border: .1rem solid var(--color-border-100);
+  --border: var(--border-style) var(--color-border-100);
   background-color: white;
   border-radius: var(--spacing-100);
   border: var(--border);
