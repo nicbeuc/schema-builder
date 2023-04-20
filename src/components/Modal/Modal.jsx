@@ -14,9 +14,11 @@ function Modal({ title, description, children, ...rest }) {
         <Dialog.Overlay className={styles.overlay} />
         <Dialog.Content className={styles.content} {...rest}>
           <div className={styles.inner}>
-            <Dialog.Title>{title}</Dialog.Title>
-            <Dialog.Description>{description}</Dialog.Description>
-            <div>{children}</div>
+            <Dialog.Title className={styles.title}>{title}</Dialog.Title>
+            <Dialog.Description className={styles.description}>
+              {description}
+            </Dialog.Description>
+            <div className={styles.main}>{children}</div>
             <Dialog.Close className={styles.close}>
               <CloseIcon size={16} className={styles.closeIcon} />
             </Dialog.Close>

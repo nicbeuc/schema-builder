@@ -18,7 +18,12 @@ function App() {
             <MetadataControls />
           </Step>
           <Step header='Settings'>
-            <Modal title={"Test title"} description={"Test desc"}>
+            <Modal
+              title={"Test title"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              }
+            >
               Content in here
             </Modal>
           </Step>
