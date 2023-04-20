@@ -17,6 +17,7 @@
   font-family: var(--font-family-medium);
   padding-bottom: var(--spacing-100);
   color: var(--color-neutral-700);
+  flex-grow: 1;
 }
 
 .infoIcon {
